@@ -1,1 +1,1 @@
-from shared.shared import afunction, clean_string
+from shared.shared import afunction, clean_string, space_compress
