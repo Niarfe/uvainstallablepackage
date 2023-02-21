@@ -21,5 +21,8 @@ def space_compress(stocomp):
     comp = re.sub(r'\s+', ' ', stocomp)
     return comp.strip()
 
-def new_func():
-    pass
+import re
+def space_expand(stoexp):
+    assert isinstance(stoexp, str), "Expected str but got {} instead".format(type(stoexp))
+    expand = re.sub(r'\s+', '         ', stoexp)
+    return expand.strip()
